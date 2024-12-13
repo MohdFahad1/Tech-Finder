@@ -5,4 +5,14 @@ export const categoryData = {
   description: "Creating apps for mobile devices like smartphones and tablets.",
   icon: <Smartphone className="w-6 h-6  text-gray-900" />,
   path: "/browse/mobile",
+  subCategories: [
+    {
+      name: "Frontnend",
+      path: "frontend",
+    },
+    {
+      name: "Payment",
+      path: "payments",
+    },
+  ],
 };

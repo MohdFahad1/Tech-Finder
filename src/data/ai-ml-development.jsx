@@ -6,4 +6,26 @@ export const categoryData = {
     "Building algorithms and models for tasks that require human-like cognition and learning.",
   icon: <Sparkle className="w-6 h-6  text-gray-900" />,
   path: "/browse/ai-ml-development",
+  subCategories: [
+    {
+      name: "Languages",
+      path: "languages",
+    },
+    {
+      name: "IDEs",
+      path: "ides",
+    },
+    {
+      name: "Platforms",
+      path: "platforms",
+    },
+    {
+      name: "Libraries",
+      path: "libraries",
+    },
+    {
+      name: "Frameworks",
+      path: "frameworks",
+    },
+  ],
 };
