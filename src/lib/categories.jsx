@@ -1,0 +1,19 @@
+import { categoryData as catData7 } from "@/data/ai-ml-development";
+import { categoryData as catData3 } from "@/data/cross-platform-development";
+import { categoryData as catData4 } from "@/data/desktop-development";
+import { categoryData as catData5 } from "@/data/game-development";
+import { categoryData as catData2 } from "@/data/mobile-development";
+import { categoryData as catData1 } from "@/data/wev-development";
+
+export function getCategories() {
+  const data = {
+    catData1,
+    catData2,
+    catData3,
+    catData4,
+    catData5,
+    catData7,
+  };
+  const output = Object.values(data);
+  return output;
+}
