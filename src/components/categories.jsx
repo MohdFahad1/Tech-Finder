@@ -5,7 +5,7 @@ import Link from "next/link";
 const Categories = () => {
   const allCategories = getCategories();
   return (
-    <div className="grid sm:grid-cols-2  lg:grid-cols-3 gap-4 mt-14">
+    <div className="grid sm:grid-cols-2  lg:grid-cols-3 gap-4 mt-14 px-24">
       {allCategories.map((category, idx) => {
         const icon = category.icon;
         const name = category.name;

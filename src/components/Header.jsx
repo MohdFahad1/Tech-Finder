@@ -19,7 +19,7 @@ import SearchDialog from "./search-dialog";
 function Header() {
   const [open, setOpen] = useState(false);
   return (
-    <nav className="py-2">
+    <nav className="py-2 px-24">
       <SearchDialog open={open} setOpen={setOpen} />
       <div className="flex items-center justify-between">
         <div className="flex items-center">
