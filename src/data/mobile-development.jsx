@@ -7,9 +7,10 @@ export const categoryData = {
   path: "/browse/mobile",
   subCategories: [
     {
-      name: "Frontnend",
+      name: "Frontend", // Correct name
       path: "frontend",
       item: {
+        // Use 'item' instead of 'items'
         Languages: [
           {
             name: "Swift",
