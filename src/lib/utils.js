@@ -18,3 +18,13 @@ export function findCategory(categoryId) {
     return categorySlug === categoryId;
   });
 }
+
+export function findSubCategory(categoryId, subCategoryId) {
+  const category = findCategory(categoryId);
+  if (category?.subCategories) {
+    const subCategory = category.subCategories.find(
+      (subCat) => subCat.path === subCategoryId
+    );
+    return subCategory;
+  }
+}
