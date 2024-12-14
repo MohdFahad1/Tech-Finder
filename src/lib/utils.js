@@ -33,3 +33,25 @@ export function uppercaseFirstLetter(str) {
   if (!str) return str;
   return str.charAt(0).toUpperCase() + str.slice(1);
 }
+
+export function findRootPathBySlug(data, slug) {
+  for (let subCategory of data.subCategories) {
+    if (Array.isArray(subCategory.items)) {
+      for (let item of subCategory.items) {
+        if (item.slug === slug) {
+          return subCategory.path;
+        }
+      }
+    } else {
+      for (let key in subCategory.items) {
+        let itemsArray = subCategory.items[key];
+        for (let item of itemsArray) {
+          if (item.slug === slug) {
+            return subCategory.path;
+          }
+        }
+      }
+    }
+  }
+  return null;
+}
