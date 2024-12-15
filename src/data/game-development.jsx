@@ -1,3 +1,9 @@
+import {
+  CSharpIcon,
+  GodotIcon,
+  UnityIcon,
+  UnrealEngineIcon,
+} from "@/components/icons";
 import { Gamepad2 } from "lucide-react";
 
 export const categoryData = {
@@ -15,7 +21,7 @@ export const categoryData = {
           name: "C#",
           slug: "csharp",
           url: "https://learn.microsoft.com/en-us/dotnet/csharp/",
-          // icon: CSharpIcon,
+          icon: CSharpIcon,
         },
       ],
     },
@@ -27,19 +33,19 @@ export const categoryData = {
           name: "Unity",
           slug: "unity",
           url: "https://unity.com/",
-          // icon: UnityIcon,
+          icon: UnityIcon,
         },
         {
           name: "Unreal Engine",
           slug: "unreal-engine",
           url: "https://unrealengine.com/",
-          // icon: UnrealEngineIcon,
+          icon: UnrealEngineIcon,
         },
         {
           name: "Godot",
           slug: "godot",
           url: "https://godotengine.org/",
-          // icon: GodotIcon,
+          icon: GodotIcon,
         },
       ],
     },

@@ -3,7 +3,7 @@ import { categoryData as catData3 } from "@/data/cross-platform-development";
 import { categoryData as catData4 } from "@/data/desktop-development";
 import { categoryData as catData5 } from "@/data/game-development";
 import { categoryData as catData2 } from "@/data/mobile-development";
-import { categoryData as catData1 } from "@/data/wev-development";
+import { categoryData as catData1 } from "@/data/web-development";
 
 export function getCategories() {
   const data = {

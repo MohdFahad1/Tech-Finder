@@ -1,3 +1,11 @@
+import {
+  CreateExpoStackIcon,
+  ElectronIcon,
+  ExpoIcon,
+  FlutterIcon,
+  ReactNativeIcon,
+  WatermelonDBIcon,
+} from "@/components/icons";
 import { MonitorSmartphone } from "lucide-react";
 
 export const categoryData = {
@@ -16,19 +24,19 @@ export const categoryData = {
             name: "React Native",
             slug: "react-native",
             url: "https://reactnative.dev/",
-            // icon: ReactNativeIcon,
+            icon: ReactNativeIcon,
           },
           {
             name: "Flutter",
             slug: "flutter",
             url: "https://flutter.dev/",
-            // icon: FlutterIcon,
+            icon: FlutterIcon,
           },
           {
             name: "Electron",
             slug: "electron",
             url: "https://electronjs.org/",
-            // icon: ElectronIcon,
+            icon: ElectronIcon,
           },
         ],
       },
@@ -41,13 +49,13 @@ export const categoryData = {
           name: "Expo",
           slug: "expo",
           url: "https://expo.dev/",
-          // icon: ExpoIcon,
+          icon: ExpoIcon,
         },
         {
           name: "Create Expo Stack",
           slug: "create-expo-stack",
           url: "https://createexpostack.com/",
-          // icon: CreateExpoStackIcon,
+          icon: CreateExpoStackIcon,
         },
       ],
     },
@@ -60,7 +68,7 @@ export const categoryData = {
             name: "WatermelonDB",
             slug: "watermelondb",
             url: "https://watermelondb.dev/docs",
-            // icon: WatermelonDBIcon,
+            icon: WatermelonDBIcon,
           },
         ],
       },
