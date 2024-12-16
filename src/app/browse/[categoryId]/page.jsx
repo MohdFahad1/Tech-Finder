@@ -87,6 +87,9 @@ function ToolingList({ category, categoryId, tooling }) {
               </div>
             )}
             {/* DESCRIPTION */}
+            <span className="text-sm text-slate-600 line-clamp-2 ">
+              {item?.overview?.description}
+            </span>
           </div>
         </div>
       </Link>

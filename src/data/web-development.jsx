@@ -90,6 +90,10 @@ export const categoryData = {
           url: "https://kinde.com/",
           icon: KindeIcon,
           tags: ["Auth"],
+          overview: {
+            description:
+              "Simple, powerful authentication you can integrate with your product in minutes.",
+          },
         },
         {
           name: "Auth0",
