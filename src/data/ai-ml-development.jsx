@@ -111,6 +111,10 @@ export const categoryData = {
           url: "https://tensorflow.org/",
           icon: TensorFlowIcon,
           tags: ["Framework"],
+          overview: {
+            description:
+              "An end-to-end open source machine learning platform for everyone. Discover TensorFlow's flexible ecosystem of tools, libraries and community resources.",
+          },
         },
         {
           name: "PyTorch",

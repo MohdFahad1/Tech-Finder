@@ -637,7 +637,7 @@ export const categoryData = {
             slug: "drizzle-orm",
             url: "https://orm.drizzle.team/",
             icon: DrizzleIcon,
-            tags: ["ORM"],
+            tags: ["ORM", "Database"],
             overview: {
               description:
                 "Drizzle ORM is a lightweight and performant TypeScript ORM with developer experience in mind.",
@@ -648,7 +648,7 @@ export const categoryData = {
             slug: "prisma",
             url: "https://prisma.io/",
             icon: PrismaIcon,
-            tags: ["ORM"],
+            tags: ["ORM", "Database"],
             overview: {
               description:
                 "Prisma is a next-generation Node.js and TypeScript ORM for PostgreSQL, MySQL, SQL Server, SQLite, MongoDB, and CockroachDB. It provides type-safety, automated migrations, and an intuitive data model.",
@@ -665,6 +665,7 @@ export const categoryData = {
               description:
                 "Postgres made for developers. Easy to Use, Scalable, Cost efficient solution for your next project.",
             },
+            tags: ["Platform"],
           },
           {
             name: "MongoDB",
@@ -674,6 +675,7 @@ export const categoryData = {
             overview: {
               description: "All the tech stacks you should know",
             },
+            tags: ["Database"],
           },
           {
             name: "Supabase",
@@ -691,7 +693,7 @@ export const categoryData = {
             slug: "appwrite",
             url: "https://appwrite.io/",
             icon: AppwriteIcon,
-            tags: ["Backend Platform"],
+            tags: ["Backend", "Platform"],
             overview: {
               description:
                 "Appwrite is an open-source platform for building applications at any scale, using your preferred programming languages and tools.",
