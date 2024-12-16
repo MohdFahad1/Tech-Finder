@@ -5,9 +5,9 @@ import {
   OpenCVIcon,
   PythonIcon,
   PyTorchIcon,
-  RubyIcon,
   TensorFlowIcon,
 } from "@/components/icons";
+import { RIcon } from "@/components/icons/r";
 import { Sparkle } from "lucide-react";
 
 export const categoryData = {
@@ -26,12 +26,14 @@ export const categoryData = {
           slug: "python",
           url: "https://python.org/",
           icon: PythonIcon,
+          tags: ["Languages"],
         },
         {
           name: "R",
           slug: "r",
           url: "https://r-project.org/",
-          icon: RubyIcon,
+          icon: RIcon,
+          tags: ["Languages"],
         },
       ],
     },
@@ -44,12 +46,14 @@ export const categoryData = {
           slug: "kaggle",
           url: "https://kaggle.com/",
           icon: KaggleIcon,
+          tags: ["Platform"],
         },
         {
           name: "HuggingFace",
           slug: "hugging-face",
           url: "https://huggingface.co/",
           icon: HuggingFaceIcon,
+          tags: ["Platform"],
         },
       ],
     },
@@ -62,12 +66,14 @@ export const categoryData = {
           slug: "opencv",
           url: "https://opencv.org/",
           icon: OpenCVIcon,
+          tags: ["Library"],
         },
         {
           name: "Keras",
           slug: "keras",
           url: "https://keras.io/",
           icon: KerasIcon,
+          tags: ["Library"],
         },
       ],
     },
@@ -80,12 +86,14 @@ export const categoryData = {
           slug: "tensor-flow",
           url: "https://tensorflow.org/",
           icon: TensorFlowIcon,
+          tags: ["Framework"],
         },
         {
           name: "PyTorch",
           slug: "pytorch",
           url: "https://pytorch.org/",
           icon: PyTorchIcon,
+          tags: ["Framework"],
         },
       ],
     },

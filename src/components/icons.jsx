@@ -1,6 +1,5 @@
-// icons.tsx
+// icons.jsx
 
-// import { DrizzleIcon } from "@/icons/drizzle";
 import { DrizzleIcon } from "@/components/icons/drizzle";
 
 import { RecoilIcon } from "@/components/icons/recoil";

@@ -76,14 +76,9 @@ function ToolingList({ category, categoryId, tooling }) {
             {item.tags?.length > 0 && (
               <div className="flex flex-row space-x-2" style={{ minWidth: 0 }}>
                 {item.tags?.map((tag, idx) => {
-                  const color = findTagColor(tag);
                   return (
                     <div key={idx} className="mb-1">
-                      <span
-                        className={`text-xs font-medium rounded-full px-2 py-0.5 ${
-                          color ?? ""
-                        }`}
-                      >
+                      <span className="text-xs font-medium rounded-full px-2 py-0.5 bg-gray-200 text-gray-800">
                         {tag}
                       </span>
                     </div>
@@ -91,9 +86,7 @@ function ToolingList({ category, categoryId, tooling }) {
                 })}
               </div>
             )}
-            <span className="text-sm text-slate-600 line-clamp-2 ">
-              {item?.overview?.description}
-            </span>
+            {/* DESCRIPTION */}
           </div>
         </div>
       </Link>
