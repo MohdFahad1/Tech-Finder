@@ -18,6 +18,10 @@ export const categoryData = {
           url: "https://learn.microsoft.com/en-us/dotnet/csharp/",
           icon: CSharpIcon,
           tags: ["Language"],
+          overview: {
+            description:
+              "C# is a versatile, object-oriented programming language developed by Microsoft, used for developing a wide range of applications including web, mobile, and desktop applications.",
+          },
         },
       ],
     },
@@ -31,6 +35,10 @@ export const categoryData = {
           url: "https://electronjs.org/",
           icon: ElectronIcon,
           tags: ["Framework"],
+          overview: {
+            description:
+              "Build cross-platform desktop apps with JavaScript, HTML, and CSS.",
+          },
         },
         {
           name: "Flutter",
@@ -38,6 +46,10 @@ export const categoryData = {
           url: "https://flutter.dev/",
           icon: FlutterIcon,
           tags: ["Framework"],
+          overview: {
+            description:
+              "Flutter transforms the entire app development process. Build, test, and deploy beautiful mobile, web, desktop, and embedded apps from a single codebase.",
+          },
         },
       ],
     },

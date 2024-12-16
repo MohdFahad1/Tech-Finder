@@ -27,6 +27,10 @@ export const categoryData = {
           url: "https://python.org/",
           icon: PythonIcon,
           tags: ["Languages"],
+          overview: {
+            description:
+              "Python is a programming language that lets you work quickly and integrate systems more effectively.",
+          },
         },
         {
           name: "R",
@@ -34,6 +38,10 @@ export const categoryData = {
           url: "https://r-project.org/",
           icon: RIcon,
           tags: ["Languages"],
+          overview: {
+            description:
+              "R is a language and environment for statistical computing and graphics.",
+          },
         },
       ],
     },
@@ -47,6 +55,10 @@ export const categoryData = {
           url: "https://kaggle.com/",
           icon: KaggleIcon,
           tags: ["Platform"],
+          overview: {
+            description:
+              "Kaggle is the world's largest data science community with powerful tools and resources to help you achieve your data science goals.",
+          },
         },
         {
           name: "HuggingFace",
@@ -54,6 +66,10 @@ export const categoryData = {
           url: "https://huggingface.co/",
           icon: HuggingFaceIcon,
           tags: ["Platform"],
+          overview: {
+            description:
+              "Build better models and generative AI apps on a unified, end-to-end, open source MLOps platform.",
+          },
         },
       ],
     },
@@ -67,6 +83,10 @@ export const categoryData = {
           url: "https://opencv.org/",
           icon: OpenCVIcon,
           tags: ["Library"],
+          overview: {
+            description:
+              "OpenCV provides a real-time optimized Computer Vision library, tools, and hardware. It also supports model execution for Machine Learning (ML) and Artificial Intelligence (AI).",
+          },
         },
         {
           name: "Keras",
@@ -74,6 +94,10 @@ export const categoryData = {
           url: "https://keras.io/",
           icon: KerasIcon,
           tags: ["Library"],
+          overview: {
+            description:
+              "Keras is an open-source library that provides a Python interface for artificial neural networks.",
+          },
         },
       ],
     },
@@ -94,6 +118,10 @@ export const categoryData = {
           url: "https://pytorch.org/",
           icon: PyTorchIcon,
           tags: ["Framework"],
+          overview: {
+            description:
+              "PyTorch is a machine learning framework based on the Torch library, used for applications such as computer vision and natural language processing, originally developed by Meta AI and now part of the Linux Foundation umbrella.",
+          },
         },
       ],
     },

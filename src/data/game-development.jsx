@@ -23,6 +23,10 @@ export const categoryData = {
           url: "https://learn.microsoft.com/en-us/dotnet/csharp/",
           icon: CSharpIcon,
           tags: ["Language"],
+          overview: {
+            description:
+              "C# is a versatile, object-oriented programming language developed by Microsoft, used for developing a wide range of applications including web, mobile, and desktop applications.",
+          },
         },
       ],
     },
@@ -36,6 +40,10 @@ export const categoryData = {
           url: "https://unity.com/",
           icon: UnityIcon,
           tags: ["Engine"],
+          overview: {
+            description:
+              "Create and grow real-time 3D games, apps, and experiences for entertainment, film, automotive, architecture, and more. Get started with Unity today.",
+          },
         },
         {
           name: "Unreal Engine",
@@ -43,6 +51,10 @@ export const categoryData = {
           url: "https://unrealengine.com/",
           icon: UnrealEngineIcon,
           tags: ["Engine"],
+          overview: {
+            description:
+              "Unreal Engine is the world's most open and advanced real-time 3D creation tool for photoreal visuals and immersive experiences.",
+          },
         },
         {
           name: "Godot",
@@ -50,6 +62,10 @@ export const categoryData = {
           url: "https://godotengine.org/",
           icon: GodotIcon,
           tags: ["Engine"],
+          overview: {
+            description:
+              "Godot provides a huge set of common tools, so you can just focus on making your game without reinventing the wheel.",
+          },
         },
       ],
     },

@@ -26,6 +26,9 @@ export const categoryData = {
             url: "https://reactnative.dev/",
             icon: ReactNativeIcon,
             tags: ["Framework"],
+            overview: {
+              description: "A framework for building native apps using React.",
+            },
           },
           {
             name: "Flutter",
@@ -33,6 +36,10 @@ export const categoryData = {
             url: "https://flutter.dev/",
             icon: FlutterIcon,
             tags: ["Framework"],
+            overview: {
+              description:
+                "Flutter transforms the entire app development process. Build, test, and deploy beautiful mobile, web, desktop, and embedded apps from a single codebase.",
+            },
           },
           {
             name: "Electron",
@@ -40,6 +47,10 @@ export const categoryData = {
             url: "https://electronjs.org/",
             icon: ElectronIcon,
             tags: ["Framework"],
+            overview: {
+              description:
+                "Build cross-platform desktop apps with JavaScript, HTML, and CSS.",
+            },
           },
         ],
       },
@@ -54,6 +65,10 @@ export const categoryData = {
           url: "https://expo.dev/",
           icon: ExpoIcon,
           tags: ["Tool"],
+          overview: {
+            description:
+              "Expo is an open-source platform for making universal native apps for Android, iOS, and the web with JavaScript and React.",
+          },
         },
         {
           name: "Create Expo Stack",
@@ -61,6 +76,9 @@ export const categoryData = {
           url: "https://createexpostack.com/",
           icon: CreateExpoStackIcon,
           tags: ["CLI"],
+          overview: {
+            description: "The most configurable way to create an Expo app.",
+          },
         },
       ],
     },
@@ -75,6 +93,9 @@ export const categoryData = {
             url: "https://watermelondb.dev/docs",
             icon: WatermelonDBIcon,
             tags: ["Database"],
+            overview: {
+              description: "A framework for building native apps using React.",
+            },
           },
         ],
       },
