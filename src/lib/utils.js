@@ -164,7 +164,6 @@ export const flattenData = () => {
               flattened.push({
                 ...item,
                 fullPath,
-                m,
               });
               seen.add(item.name);
             }
