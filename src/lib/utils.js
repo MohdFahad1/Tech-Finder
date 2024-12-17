@@ -2,6 +2,13 @@ import { clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
 import { getCategories } from "./categories";
 
+import { categoryData as categoryData6 } from "@/data/ai-ml-development";
+import { categoryData as categoryData3 } from "@/data/cross-platform-development";
+import { categoryData as categoryData4 } from "@/data/desktop-development";
+import { categoryData as categoryData5 } from "@/data/game-development";
+import { categoryData as categoryData2 } from "@/data/mobile-development";
+import { categoryData as categoryData1 } from "@/data/web-development";
+
 export function cn(...inputs) {
   return twMerge(clsx(inputs));
 }
@@ -55,3 +62,65 @@ export function findRootPathBySlug(data, slug) {
   }
   return null;
 }
+
+export const searchData = () => {
+  const categories = [
+    categoryData1,
+    categoryData2,
+    categoryData3,
+    categoryData4,
+    categoryData5,
+    categoryData6,
+  ];
+
+  let categoryItems = []; // Array to store the result
+  let seen = new Set(); // Temporary storage for tracking unique item names
+
+  categories.forEach((category) => {
+    let flattenedItems = []; // Temporary array to store flattened items for this category
+
+    const categoryPath = category.path; // Capture the category path
+
+    category.subCategories.forEach((subCategory) => {
+      const subCategoryPath = subCategory.path; // Capture the subcategory path
+
+      if (Array.isArray(subCategory.items)) {
+        // Directly an array of items
+        subCategory.items.forEach((item) => {
+          const fullPath = `${categoryPath}/${subCategoryPath}/${item.slug}`;
+          if (!seen.has(item.name)) {
+            flattenedItems.push({
+              ...item,
+              fullPath, // Add the fullPath to each item
+            });
+            seen.add(item.name); // Mark this item name as seen
+          }
+        });
+      } else {
+        // Object containing arrays of items
+        Object.values(subCategory.items).forEach((itemsArray) => {
+          itemsArray.forEach((item) => {
+            const fullPath = `${categoryPath}/${subCategoryPath}/${item.slug}`;
+            if (!seen.has(item.name)) {
+              flattenedItems.push({
+                ...item,
+                fullPath, // Add the fullPath to each item
+              });
+              seen.add(item.name); // Mark this item name as seen
+            }
+          });
+        });
+      }
+    });
+
+    if (flattenedItems.length > 0) {
+      // If there are items for this category, add them to the result
+      categoryItems.push({
+        categoryName: category.name, // Assuming each category object has a name property
+        items: flattenedItems,
+      });
+    }
+  });
+
+  return categoryItems;
+};
