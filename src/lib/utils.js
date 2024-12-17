@@ -124,3 +124,55 @@ export const searchData = () => {
 
   return categoryItems;
 };
+
+export const flattenData = () => {
+  const categories = [
+    categoryData1,
+    categoryData2,
+    categoryData3,
+    categoryData4,
+    categoryData5,
+    categoryData6,
+  ];
+
+  let flattened = [];
+  let seen = new Set();
+
+  categories.forEach((category) => {
+    const categoryPath = category.path;
+
+    category.subCategories.forEach((subCategory) => {
+      const subCategoryPath = subCategory.path;
+
+      if (Array.isArray(subCategory.items)) {
+        subCategory.items.forEach((item) => {
+          const fullPath = `${categoryPath}/${subCategoryPath}/${item.slug}`;
+          if (!seen.has(item.name)) {
+            flattened.push({
+              ...item,
+              fullPath,
+            });
+            seen.add(item.name);
+          }
+        });
+      } else {
+        // Object containing arrays of items
+        Object.values(subCategory.items).forEach((itemsArray) => {
+          itemsArray.forEach((item) => {
+            const fullPath = `${categoryPath}/${subCategoryPath}/${item.slug}`;
+            if (!seen.has(item.name)) {
+              flattened.push({
+                ...item,
+                fullPath,
+                m,
+              });
+              seen.add(item.name);
+            }
+          });
+        });
+      }
+    });
+  });
+
+  return flattened;
+};

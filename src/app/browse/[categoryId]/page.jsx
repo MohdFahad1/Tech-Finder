@@ -5,17 +5,11 @@ import { findCategory, findRootPathBySlug } from "@/lib/utils";
 export default function CategoryPage({ params }) {
   const category = findCategory(params.categoryId);
 
-  // Log category to check if it's fetched properly
-  console.log("Category:", category);
-
   if (!category) {
-    return <div>Category not found.</div>; // Handle case when category is not found
+    return <div>Category not found.</div>;
   }
 
   const tooling = flattenData(category?.subCategories);
-
-  // Log tooling to check if flattenData works as expected
-  console.log("Tooling:", tooling);
 
   return (
     <ToolingList
@@ -28,11 +22,9 @@ export default function CategoryPage({ params }) {
 
 const flattenData = (subCategories) => {
   const flattened = [];
-  if (!subCategories) return flattened; // Ensure subCategories is not undefined
+  if (!subCategories) return flattened;
 
   subCategories?.forEach((subCategory) => {
-    console.log("SubCategory:", subCategory); // Log subcategory to check its structure
-
     if (Array.isArray(subCategory.items)) {
       flattened.push(...subCategory.items);
     } else if (typeof subCategory.items === "object") {
@@ -41,7 +33,6 @@ const flattenData = (subCategories) => {
       });
     }
   });
-  console.log("Flattened Tooling:", flattened); // Log the final result
   return flattened;
 };
 
@@ -50,17 +41,14 @@ function ToolingList({ category, categoryId, tooling }) {
     return <div>No data available for this category.</div>;
   }
 
-  // Function to render a single item
   const renderItem = (item) => {
-    console.log("Rendering item:", item); // Log the item being rendered
-
-    if (!item) return null; // Prevent rendering undefined items
+    if (!item) return null;
 
     const subCategoryId = findRootPathBySlug(category, item.slug);
 
     if (!subCategoryId) {
       console.error("No subCategoryId found for item:", item);
-      return null; // Prevent rendering if no subCategoryId is found
+      return null;
     }
 
     return (

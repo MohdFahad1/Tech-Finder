@@ -5,10 +5,8 @@ import { findSubCategory, uppercaseFirstLetter } from "@/lib/utils";
 export default function SubCategoryPage({ params }) {
   const subCategory = findSubCategory(params.categoryId, params.subCategoryId);
 
-  console.log("SubCategory:", subCategory); // Debugging output
-
   if (!subCategory) {
-    return <div>No subcategory found.</div>; // Provide feedback if no subcategory
+    return <div>No subcategory found.</div>;
   }
 
   return (
