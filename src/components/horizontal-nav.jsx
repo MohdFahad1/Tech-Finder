@@ -28,13 +28,13 @@ export default function HorizontalNav({ categoryId }) {
   };
 
   return (
-    <div className="flex flex-col space-y-6 mt-6 items-center">
-      <div className="flex flex-col space-y-2 items-center text-center">
-        <h1 className="font-bold text-3xl">{category?.name}</h1>
+    <div className="flex flex-col items-center mt-6 space-y-6">
+      <div className="flex flex-col items-center space-y-2 text-center">
+        <h1 className="text-3xl font-bold">{category?.name}</h1>
         <p className="text-slate-500">{category?.description}</p>
       </div>
 
-      <div className="flex flex-row space-x-2 w-full overflow-x-auto h-14">
+      <div className="flex flex-row w-full space-x-2 overflow-x-auto h-14">
         <Link
           href={`${category?.path}`}
           className={cn(
