@@ -175,3 +175,29 @@ export const flattenData = () => {
 
   return flattened;
 };
+
+export function findSubItem(categoryId, subCategoryPath, subItemId) {
+  const subCategory = findSubCategory(categoryId, subCategoryPath);
+  if (subCategory) {
+    const items = subCategory.items;
+    const subCategoryName = subCategory.name;
+    if (Array.isArray(items)) {
+      // Handle 'Auth' and similar categories
+      const foundItem = items.find((item) => item.slug === subItemId);
+      if (foundItem) {
+        return { ...foundItem, subCategoryName };
+      }
+    } else {
+      // Handle 'Frontend' and similar categories
+      const subItems = items;
+      for (let subCategory in subItems) {
+        const foundSubItem = subItems[subCategory].find(
+          (item) => item.slug === subItemId
+        );
+        if (foundSubItem) {
+          return { ...foundSubItem, subCategoryName, subCategory };
+        }
+      }
+    }
+  }
+}
