@@ -5,7 +5,7 @@ import Link from "next/link";
 const Categories = () => {
   const allCategories = getCategories();
   return (
-    <div className="grid sm:grid-cols-2  lg:grid-cols-3 gap-4 mt-14 px-24">
+    <div className="grid gap-4 px-5 sm:grid-cols-2 lg:grid-cols-3 mt-14 lg:px-24">
       {allCategories.map((category, idx) => {
         const icon = category.icon;
         const name = category.name;
@@ -15,14 +15,14 @@ const Categories = () => {
           <Link
             key={idx}
             href={path}
-            className="flex flex-col border rounded-md p-6 space-y-2 hover:border-gray-600 duration-200"
+            className="flex flex-col p-6 space-y-2 duration-200 border rounded-md hover:border-gray-600"
           >
-            <div className="flex flex-row space-x-2 items-center">
+            <div className="flex flex-row items-center space-x-2">
               {icon}
-              <span className="text-md font-medium leading-none">{name}</span>
+              <span className="font-medium leading-none text-md">{name}</span>
             </div>
 
-            <p className="line-clamp-2 text-md leading-snug text-muted-foreground">
+            <p className="leading-snug line-clamp-2 text-md text-muted-foreground">
               {description}
             </p>
           </Link>

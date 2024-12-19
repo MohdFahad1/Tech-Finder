@@ -17,8 +17,8 @@ const Footer = () => {
               </h1>
             </Link>
             <p className="max-w-xs text-sm text-gray-500">
-              Discover the right tools for your next project effortlessly,
-              saving you hours of research time.
+              Effortlessly find the perfect tools for your next project and save
+              countless hours of research.
             </p>
           </div>
           <div className="flex flex-col w-full gap-3 md:max-w-sm">
@@ -43,7 +43,7 @@ const Footer = () => {
         </div>
         <div className="pt-8 mt-10 border-t border-gray-900/10">
           <p className="text-sm leading-5 text-gray-500">
-            @ 2024 TechStackFinder. All Rights Reserved.
+            @ 2024 TechFinder. All Rights Reserved.
           </p>
         </div>
       </div>
