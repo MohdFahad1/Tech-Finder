@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 
 import Link from "next/link";
@@ -5,24 +7,33 @@ import Link from "next/link";
 import { findSubItem } from "@/lib/utils";
 import { ChevronRightIcon } from "lucide-react";
 import Overview from "./(sections)/overview";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 export default function SubItemPage({ params }) {
+  useGSAP(() => {
+    const tl = gsap.timeline();
+
+    tl.from(".description", {
+      y: 10,
+      opacity: 0,
+      duration: 0.3,
+      delay: 0.08,
+    });
+  });
+
   const item = findSubItem(
     params.categoryId,
     params.subCategoryId,
     params.subItemId
   );
 
-  console.log("Params: ", params);
-
-  console.log(item);
-
   if (!item) {
     return <div>Item not found</div>;
   }
 
   return (
-    <div className="flex flex-col flex-1">
+    <div className="flex flex-col flex-1 description">
       <div className="flex items-center gap-2 py-4 text-sm font-semibold text-gray-500">
         <Link
           className="hover:underline"

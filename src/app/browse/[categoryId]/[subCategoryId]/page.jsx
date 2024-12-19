@@ -1,16 +1,31 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
 import { findSubCategory, uppercaseFirstLetter } from "@/lib/utils";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 export default function SubCategoryPage({ params }) {
   const subCategory = findSubCategory(params.categoryId, params.subCategoryId);
+
+  useGSAP(() => {
+    const tl = gsap.timeline();
+
+    tl.from(".subCategories", {
+      y: 10,
+      opacity: 0,
+      duration: 0.3,
+      delay: 0.08,
+    });
+  });
 
   if (!subCategory) {
     return <div>No subcategory found.</div>;
   }
 
   return (
-    <div className="flex flex-col flex-1 mt-6">
+    <div className="flex flex-col flex-1 mt-6 subCategories">
       <div className="flex flex-col mb-6">
         <span className="text-2xl font-bold">
           {uppercaseFirstLetter(subCategory.name) || "All"}

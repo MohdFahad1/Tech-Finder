@@ -1,9 +1,24 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
 import { findCategory, findRootPathBySlug } from "@/lib/utils";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 export default function CategoryPage({ params }) {
   const category = findCategory(params.categoryId);
+
+  useGSAP(() => {
+    const tl = gsap.timeline();
+
+    tl.from(".subCategories, items", {
+      y: 10,
+      opacity: 0,
+      duration: 0.3,
+      delay: 0.08,
+    });
+  });
 
   if (!category) {
     return <div>Category not found.</div>;
@@ -12,11 +27,13 @@ export default function CategoryPage({ params }) {
   const tooling = flattenData(category?.subCategories);
 
   return (
-    <ToolingList
-      tooling={tooling}
-      category={category}
-      categoryId={params.categoryId}
-    />
+    <div className="subCategories">
+      <ToolingList
+        tooling={tooling}
+        category={category}
+        categoryId={params.categoryId}
+      />
+    </div>
   );
 }
 
