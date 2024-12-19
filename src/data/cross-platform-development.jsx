@@ -28,6 +28,12 @@ export const categoryData = {
             tags: ["Framework"],
             overview: {
               description: "A framework for building native apps using React.",
+              features: [
+                "Leverages the power of React to build mobile applications with a familiar syntax.",
+                "Supports hot reloading for faster development and iteration.",
+                "Access to native components and APIs for a more authentic user experience.",
+                "Strong community support with a rich ecosystem of libraries and tools.",
+              ],
             },
           },
           {
@@ -39,6 +45,12 @@ export const categoryData = {
             overview: {
               description:
                 "Flutter transforms the entire app development process. Build, test, and deploy beautiful mobile, web, desktop, and embedded apps from a single codebase.",
+              features: [
+                "Provides a rich set of pre-designed widgets that allow for expressive UI designs.",
+                "Compiles to native code for high performance across platforms.",
+                "Hot reload feature enables quick iterations during development.",
+                "Strong community and extensive documentation to assist developers.",
+              ],
             },
           },
           {
@@ -50,6 +62,12 @@ export const categoryData = {
             overview: {
               description:
                 "Build cross-platform desktop apps with JavaScript, HTML, and CSS.",
+              features: [
+                "Allows developers to use web technologies to create desktop applications.",
+                "Supports automatic updates and packaging for distribution across platforms.",
+                "Access to native OS APIs through Node.js integration.",
+                "Large ecosystem of plugins and tools to enhance functionality.",
+              ],
             },
           },
         ],
@@ -68,6 +86,12 @@ export const categoryData = {
           overview: {
             description:
               "Expo is an open-source platform for making universal native apps for Android, iOS, and the web with JavaScript and React.",
+            features: [
+              "Simplifies the development process with a managed workflow for building apps.",
+              "Provides a set of APIs that make it easy to access device features like camera and location.",
+              "Includes an online app store for sharing your projects easily with others.",
+              "Supports over-the-air updates to quickly deploy changes without going through app stores.",
+            ],
           },
         },
         {
@@ -78,6 +102,12 @@ export const categoryData = {
           tags: ["CLI"],
           overview: {
             description: "The most configurable way to create an Expo app.",
+            features: [
+              "Highly configurable CLI tool that streamlines the setup process for new Expo projects.",
+              "Supports various templates to kickstart different types of applications quickly.",
+              "Integrates seamlessly with popular libraries and frameworks used in Expo development.",
+              "Facilitates easy management of dependencies and project structure.",
+            ],
           },
         },
       ],
@@ -94,7 +124,14 @@ export const categoryData = {
             icon: WatermelonDBIcon,
             tags: ["Database"],
             overview: {
-              description: "A framework for building native apps using React.",
+              description:
+                "A reactive database for building complex applications in React Native and other frameworks.",
+              features: [
+                "Optimized for performance with lazy loading and background synchronization capabilities.",
+                "Supports complex queries while maintaining a simple API for developers.",
+                "Built-in support for offline-first applications, ensuring data persistence even without internet access.",
+                "Reactive data binding allows automatic updates in the UI when the underlying data changes.",
+              ],
             },
           },
         ],

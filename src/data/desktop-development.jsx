@@ -21,6 +21,12 @@ export const categoryData = {
           overview: {
             description:
               "C# is a versatile, object-oriented programming language developed by Microsoft, used for developing a wide range of applications including web, mobile, and desktop applications.",
+            features: [
+              "Strongly typed language with rich type inference and advanced features like async/await for asynchronous programming.",
+              "Integrated with the .NET ecosystem, providing access to a vast library of frameworks and tools.",
+              "Cross-platform capabilities with .NET Core, allowing development for Windows, macOS, and Linux.",
+              "Robust support for object-oriented programming principles, making it suitable for large-scale applications.",
+            ],
           },
         },
       ],
@@ -38,6 +44,12 @@ export const categoryData = {
           overview: {
             description:
               "Build cross-platform desktop apps with JavaScript, HTML, and CSS.",
+            features: [
+              "Leverages web technologies (JavaScript, HTML, CSS) to create desktop applications, making it accessible to web developers.",
+              "Supports automatic updates and packaging for easy distribution across platforms.",
+              "Integration with Node.js allows access to native OS features and APIs.",
+              "Active community and a rich ecosystem of plugins enhance functionality and ease of development.",
+            ],
           },
         },
         {
@@ -49,6 +61,12 @@ export const categoryData = {
           overview: {
             description:
               "Flutter transforms the entire app development process. Build, test, and deploy beautiful mobile, web, desktop, and embedded apps from a single codebase.",
+            features: [
+              "Offers a rich set of customizable widgets that enable expressive UI design across platforms.",
+              "Compiles to native code for high performance on desktop environments.",
+              "Hot reload feature allows developers to see changes in real-time during development.",
+              "Strong community support with extensive documentation and resources available.",
+            ],
           },
         },
       ],

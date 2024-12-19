@@ -30,6 +30,12 @@ export const categoryData = {
           overview: {
             description:
               "Python is a programming language that lets you work quickly and integrate systems more effectively.",
+            features: [
+              "Easy to learn and use, making it ideal for beginners.",
+              "Rich ecosystem of libraries for data science and machine learning (e.g., Pandas, NumPy).",
+              "Strong community support and extensive documentation.",
+              "Supports multiple programming paradigms including procedural, object-oriented, and functional programming.",
+            ],
           },
         },
         {
@@ -41,6 +47,12 @@ export const categoryData = {
           overview: {
             description:
               "R is a language and environment for statistical computing and graphics.",
+            features: [
+              "Excellent for statistical analysis and data visualization.",
+              "Comprehensive packages for data manipulation (e.g., dplyr, tidyr).",
+              "Strong community support with numerous user-contributed packages.",
+              "Integrated with various data sources and formats.",
+            ],
           },
         },
       ],
@@ -58,6 +70,12 @@ export const categoryData = {
           overview: {
             description:
               "Kaggle is the world's largest data science community with powerful tools and resources to help you achieve your data science goals.",
+            features: [
+              "Access to a vast repository of datasets for experimentation.",
+              "Competitions to test and improve your machine learning skills.",
+              "Collaborative environment with notebooks for sharing code and insights.",
+              "Integration with popular libraries like TensorFlow and PyTorch.",
+            ],
           },
         },
         {
@@ -69,6 +87,12 @@ export const categoryData = {
           overview: {
             description:
               "Build better models and generative AI apps on a unified, end-to-end, open source MLOps platform.",
+            features: [
+              "State-of-the-art pre-trained models for NLP tasks available in one place.",
+              "User-friendly API for easy model deployment and integration.",
+              "Active community contributing to model improvements and datasets.",
+              "Support for fine-tuning models on custom datasets.",
+            ],
           },
         },
       ],
@@ -86,6 +110,12 @@ export const categoryData = {
           overview: {
             description:
               "OpenCV provides a real-time optimized Computer Vision library, tools, and hardware. It also supports model execution for Machine Learning (ML) and Artificial Intelligence (AI).",
+            features: [
+              "Comprehensive set of tools for image processing and computer vision tasks.",
+              "Supports multiple languages including Python, C++, and Java.",
+              "Real-time capabilities make it suitable for performance-critical applications.",
+              "Wide range of algorithms for object detection, face recognition, etc.",
+            ],
           },
         },
         {
@@ -97,6 +127,12 @@ export const categoryData = {
           overview: {
             description:
               "Keras is an open-source library that provides a Python interface for artificial neural networks.",
+            features: [
+              "High-level API that simplifies building deep learning models.",
+              "Supports multiple backends including TensorFlow and Theano.",
+              "Easy to experiment with different architectures due to its modular design.",
+              "Extensive documentation and examples available for users.",
+            ],
           },
         },
       ],
@@ -114,6 +150,12 @@ export const categoryData = {
           overview: {
             description:
               "An end-to-end open source machine learning platform for everyone. Discover TensorFlow's flexible ecosystem of tools, libraries and community resources.",
+            features: [
+              "Scalable architecture that supports distributed training across multiple GPUs.",
+              "Rich ecosystem including TensorBoard for visualization and TensorFlow Lite for mobile deployment.",
+              "Strong community support with extensive tutorials and resources available.",
+              "Integration with Keras allows easy model building.",
+            ],
           },
         },
         {
@@ -125,6 +167,12 @@ export const categoryData = {
           overview: {
             description:
               "PyTorch is a machine learning framework based on the Torch library, used for applications such as computer vision and natural language processing, originally developed by Meta AI and now part of the Linux Foundation umbrella.",
+            features: [
+              "Dynamic computation graph allows for flexible model building during runtime.",
+              "Strong support for GPU acceleration to speed up training processes.",
+              "Rich ecosystem of libraries like torchvision for computer vision tasks.",
+              "Active community contributing to numerous tutorials and research papers.",
+            ],
           },
         },
       ],

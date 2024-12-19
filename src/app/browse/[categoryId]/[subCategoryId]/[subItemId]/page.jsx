@@ -4,6 +4,7 @@ import Link from "next/link";
 
 import { findSubItem } from "@/lib/utils";
 import { ChevronRightIcon } from "lucide-react";
+import Overview from "./(sections)/overview";
 
 export default function SubItemPage({ params }) {
   const item = findSubItem(
@@ -88,6 +89,9 @@ export default function SubItemPage({ params }) {
             </Link>
           </div>
         </div>
+      </div>
+      <div>
+        <Overview overview={item.overview} />
       </div>
     </div>
   );

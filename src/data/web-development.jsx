@@ -82,6 +82,12 @@ export const categoryData = {
           overview: {
             description:
               "The easiest way to add authentication and user management to your application. Purpose-built for React, Next.js, Remix, and 'The Modern Web'.",
+            features: [
+              "Built-in user interface components for authentication.",
+              "Multi-factor authentication support.",
+              "Seamless integration with React, Next.js, and more.",
+              "Comprehensive API for custom user management.",
+            ],
           },
         },
         {
@@ -93,6 +99,12 @@ export const categoryData = {
           overview: {
             description:
               "Simple, powerful authentication you can integrate with your product in minutes.",
+            features: [
+              "One-click setup for authentication and user roles.",
+              "Customizable login and registration flows.",
+              "Secure session management and token handling.",
+              "Scalable architecture designed for growing applications.",
+            ],
           },
         },
         {
@@ -104,6 +116,12 @@ export const categoryData = {
           overview: {
             description:
               "Rapidly integrate authentication and authorization for web, mobile, and legacy applications so you can focus on your core business.",
+            features: [
+              "Support for multiple identity providers (social, enterprise, and database connections).",
+              "Advanced role-based access control (RBAC).",
+              "Seamless integration with modern application stacks.",
+              "Built-in support for multi-factor authentication (MFA).",
+            ],
           },
         },
         {
@@ -115,6 +133,12 @@ export const categoryData = {
           overview: {
             description:
               "Use Supabase to authenticate and authorize your users.",
+            features: [
+              "JWT-based authentication with support for multiple providers.",
+              "Secure user management with self-hosted or cloud options.",
+              "Integration with Postgres database and real-time subscriptions.",
+              "Support for passwordless login via magic links.",
+            ],
           },
         },
         {
@@ -126,6 +150,12 @@ export const categoryData = {
           overview: {
             description:
               "Firebase Authentication lets you add an end-to-end identity solution to your app for easy user authentication, sign-in, and onboarding in just a few lines of code.",
+            features: [
+              "Email/password, phone number, and social login support.",
+              "Integration with Google services and other Firebase products.",
+              "Real-time authentication state synchronization.",
+              "Advanced security features like token verification and re-authentication.",
+            ],
           },
         },
         {
@@ -137,10 +167,17 @@ export const categoryData = {
           overview: {
             description:
               "Lucia is a simple and flexible auth library for TypeScript.",
+            features: [
+              "Supports both server-side and client-side rendering.",
+              "Integrates seamlessly with modern frameworks like SvelteKit and Next.js.",
+              "Secure password hashing and session management.",
+              "Customizable authentication flow with minimal configuration.",
+            ],
           },
         },
       ],
     },
+
     {
       name: "Frontend",
       path: "frontend",
@@ -155,6 +192,12 @@ export const categoryData = {
             overview: {
               description:
                 "HTML is the standard markup language used to create web pages. It provides the basic structure of sites, which is then enhanced and modified by other technologies like CSS and JavaScript.",
+              features: [
+                "Defines the structure of web pages with elements and tags.",
+                "Supports multimedia elements like images, videos, and audio.",
+                "Forms the foundation for SEO-friendly content.",
+                "Works seamlessly with CSS and JavaScript for advanced features.",
+              ],
             },
           },
           {
@@ -166,6 +209,12 @@ export const categoryData = {
             overview: {
               description:
                 "CSS is used for styling and laying out web pages—like colors, fonts, and spacing. It allows developers to adapt the presentation to different types of devices, such as large screens, small screens, or printers.",
+              features: [
+                "Controls the appearance of web pages with selectors and rules.",
+                "Supports responsive design with media queries.",
+                "Allows animations and transitions for interactive design.",
+                "Provides styling flexibility with variables and frameworks like Bootstrap.",
+              ],
             },
           },
           {
@@ -177,6 +226,12 @@ export const categoryData = {
             overview: {
               description:
                 "JavaScript is a programming language that enables interactive web pages and thus is an essential part of web applications. It's used to control webpage behavior.",
+              features: [
+                "Adds interactivity to websites through events and DOM manipulation.",
+                "Supports asynchronous operations with Promises and async/await.",
+                "Works with modern frameworks like React, Angular, and Vue.",
+                "Enables server-side development with Node.js.",
+              ],
             },
           },
           {
@@ -188,6 +243,12 @@ export const categoryData = {
             overview: {
               description:
                 "An extension of JavaScript that adds static types to the language. It's designed to develop large applications and transcompiles to JavaScript.",
+              features: [
+                "Improves code maintainability with static typing.",
+                "Supports modern JavaScript features and compiles to plain JavaScript.",
+                "Great tooling support for IDEs with autocompletion and error detection.",
+                "Facilitates large-scale application development.",
+              ],
             },
           },
         ],
@@ -200,6 +261,12 @@ export const categoryData = {
             tags: ["Library"],
             overview: {
               description: "The library for web and native user interfaces.",
+              features: [
+                "Component-based architecture for reusable code.",
+                "Virtual DOM for high-performance rendering.",
+                "Rich ecosystem with libraries like Redux and React Router.",
+                "Supports both client-side and server-side rendering.",
+              ],
             },
           },
           {
@@ -211,6 +278,12 @@ export const categoryData = {
             overview: {
               description:
                 "Solid is a purely reactive library. It was designed from the ground up with a reactive core. It's influenced by reactive principles developed by previous libraries.",
+              features: [
+                "High performance with a reactive system.",
+                "Efficient updates with a compiled output.",
+                "Lightweight and fast without a Virtual DOM.",
+                "Easy integration with existing JavaScript frameworks.",
+              ],
             },
           },
           {
@@ -222,6 +295,12 @@ export const categoryData = {
             overview: {
               description:
                 "htmx gives you access to AJAX, CSS Transitions, WebSockets and Server Sent Events directly in HTML, using attributes, so you can build modern user interfaces with the simplicity and power of hypertext.",
+              features: [
+                "Supports server-driven UI updates with minimal JavaScript.",
+                "Enables seamless HTTP requests directly from HTML attributes.",
+                "Improves user experience with partial page updates.",
+                "Simplifies progressive enhancement for web applications.",
+              ],
             },
           },
           {
@@ -233,6 +312,12 @@ export const categoryData = {
             overview: {
               description:
                 "jQuery: The Write Less, Do More, JavaScript Library.",
+              features: [
+                "Simplifies DOM traversal and manipulation.",
+                "Supports cross-browser compatibility.",
+                "Rich plugin ecosystem for extended functionality.",
+                "Lightweight and easy to integrate into web projects.",
+              ],
             },
           },
         ],
@@ -246,6 +331,12 @@ export const categoryData = {
             overview: {
               description:
                 "Angular lets you start small and supports you as your team and apps grow.",
+              features: [
+                "Two-way data binding for real-time updates.",
+                "Comprehensive CLI for efficient project scaffolding and development.",
+                "Built-in dependency injection for modular code.",
+                "Supports RxJS for reactive programming.",
+              ],
             },
           },
           {
@@ -256,6 +347,12 @@ export const categoryData = {
             tags: ["Framework"],
             overview: {
               description: "Cybernetically enhanced web apps.",
+              features: [
+                "No virtual DOM—compiles to optimized JavaScript.",
+                "Reactive state management without additional libraries.",
+                "Small bundle size for faster loading times.",
+                "Rich animations and transitions built into the framework.",
+              ],
             },
           },
           {
@@ -267,6 +364,12 @@ export const categoryData = {
             overview: {
               description:
                 "An approachable, performant and versatile framework for building web user interfaces.",
+              features: [
+                "Component-based architecture for reusable code.",
+                "Two-way data binding for dynamic user interfaces.",
+                "Extensive ecosystem with Vue Router and Vuex.",
+                "Lightweight and easy to integrate with other libraries.",
+              ],
             },
           },
         ],
@@ -280,6 +383,12 @@ export const categoryData = {
             overview: {
               description:
                 "MUI provides a simple, customizable, and accessible library of React components. Follow your own design system, or start with Material Design.",
+              features: [
+                "Comprehensive React components for Material Design.",
+                "Theming support with custom palettes and typography.",
+                "Highly customizable components for unique designs.",
+                "Supports TypeScript for type-safe development.",
+              ],
             },
           },
           {
@@ -291,6 +400,12 @@ export const categoryData = {
             overview: {
               description:
                 "An enterprise-class UI design language and React UI library with a set of high-quality React components, one of best React UI library for enterprises",
+              features: [
+                "Wide range of pre-built components for enterprise needs.",
+                "Flexible theming with customization options.",
+                "Internationalization support for multiple languages.",
+                "Comprehensive documentation and community support.",
+              ],
             },
           },
           {
@@ -302,6 +417,12 @@ export const categoryData = {
             overview: {
               description:
                 "Simple, Modular and Accessible UI Components for your React Applications. Built with Styled System.",
+              features: [
+                "Fully accessible components out of the box.",
+                "Modular and customizable component structure.",
+                "Intuitive styling with a theme-based system.",
+                "Supports responsive design with easy breakpoints.",
+              ],
             },
           },
           {
@@ -313,6 +434,12 @@ export const categoryData = {
             overview: {
               description:
                 "Copy paste the most trending components and use them in your websites without having to worry about styling and animations.",
+              features: [
+                "Blockchain-specific components for DApp development.",
+                "Supports seamless interaction with smart contracts.",
+                "Lightweight and optimized for performance.",
+                "Focuses on user-friendly design principles.",
+              ],
             },
           },
           {
@@ -324,6 +451,12 @@ export const categoryData = {
             overview: {
               description:
                 "Best Tailwind Components Library - Free UI components for Tailwind CSS.",
+              features: [
+                "Pre-built Tailwind CSS components for rapid development.",
+                "Easily customizable to fit unique design needs.",
+                "Responsive and mobile-first by default.",
+                "Supports multiple themes out of the box.",
+              ],
             },
           },
           {
@@ -335,6 +468,12 @@ export const categoryData = {
             overview: {
               description:
                 "Make beautiful websites regardless of your design experience.",
+              features: [
+                "Minimal and clean design system.",
+                "Supports dark mode and theming.",
+                "Highly performant with optimized components.",
+                "Easy integration with Next.js applications.",
+              ],
             },
           },
           {
@@ -346,6 +485,12 @@ export const categoryData = {
             overview: {
               description:
                 "Beautifully designed components that you can copy and paste into your apps. Accessible. Customizable. Open Source.",
+              features: [
+                "Highly accessible components with ARIA compliance.",
+                "Built with modern design principles.",
+                "Easily extendable with utility-first CSS.",
+                "Integrates seamlessly with Tailwind CSS.",
+              ],
             },
           },
           {
@@ -357,6 +502,12 @@ export const categoryData = {
             overview: {
               description:
                 "Components, icons, and colors for building high‑quality, accessible UI. Free and open-source.",
+              features: [
+                "Unstyled components for maximum design flexibility.",
+                "Built-in accessibility for WCAG compliance.",
+                "Supports server-side rendering (SSR).",
+                "Customizable and framework-agnostic.",
+              ],
             },
           },
           {
@@ -368,19 +519,26 @@ export const categoryData = {
             overview: {
               description:
                 "Beautiful UI components and templates by the creators of Tailwind CSS.",
+              features: [
+                "Beautifully designed, production-ready components.",
+                "Built with Tailwind CSS for ultimate customization.",
+                "Responsive and accessible by default.",
+                "Extensive range of components for all use cases.",
+              ],
             },
           },
-          {
-            name: "syntaxUI",
-            slug: "syntax-ui",
-            url: "https://syntaxui.com/",
-            icon: SyntaxUIIcon,
-            tags: ["UI Library"],
-            overview: {
-              description:
-                "Ready-to-use UI elements designed for rapid development.",
-            },
-          },
+          // {
+          //   name: "syntaxUI",
+          //   slug: "syntax-ui",
+          //   url: "https://syntaxui.com/",
+          //   icon: SyntaxUIIcon,
+          //   tags: ["UI Library"],
+          //   overview: {
+          //     description:
+          //       "Ready-to-use UI elements designed for rapid development.",
+          //     features: [],
+          //   },
+          // },
         ],
         Styling: [
           {
@@ -392,6 +550,12 @@ export const categoryData = {
             overview: {
               description:
                 "Tailwind CSS is a utility-first CSS framework for rapidly building modern websites without ever leaving your HTML.",
+              features: [
+                "Utility-first classes for rapid styling.",
+                "Highly customizable with a configuration file.",
+                "Responsive and mobile-first design support.",
+                "Eliminates the need for writing custom CSS.",
+              ],
             },
           },
           {
@@ -402,11 +566,19 @@ export const categoryData = {
             tags: ["Styling"],
             overview: {
               description: "CSS for the <Component> Age",
+              features: [
+                "Scoped styling for React components.",
+                "Dynamic theming and prop-based styles.",
+                "Supports global styles for consistent design.",
+                "Eliminates classname conflicts.",
+              ],
             },
           },
         ],
       },
-    }, // BACKEND
+    },
+
+    // BACKEND
     {
       name: "Backend",
       path: "backend",
@@ -421,6 +593,12 @@ export const categoryData = {
             overview: {
               description:
                 "Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.",
+              features: [
+                "Write Once, Run Anywhere (WORA) capabilities.",
+                "Comprehensive standard libraries.",
+                "Widely used in enterprise, web, and mobile development.",
+                "Extensive support for multithreading and performance optimization.",
+              ],
             },
           },
           {
@@ -432,6 +610,12 @@ export const categoryData = {
             overview: {
               description:
                 "A popular general-purpose scripting language that is especially suited to web development. Fast, flexible and pragmatic, PHP powers everything from your blog to the most popular websites in the world.",
+              features: [
+                "Efficient for building dynamic web pages.",
+                "Supports a wide range of frameworks and CMS tools.",
+                "Extensive library support for common functionalities.",
+                "Compatible with most web servers and databases.",
+              ],
             },
           },
           {
@@ -443,6 +627,12 @@ export const categoryData = {
             overview: {
               description:
                 "A dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write.",
+              features: [
+                "Readable and expressive syntax.",
+                "Robust support for object-oriented programming.",
+                "Integrated with Rails for rapid web development.",
+                "Active community and rich library ecosystem.",
+              ],
             },
           },
           {
@@ -454,6 +644,12 @@ export const categoryData = {
             overview: {
               description:
                 "Go is an open source programming language that makes it simple to build secure, scalable systems.",
+              features: [
+                "Built-in support for concurrency.",
+                "Fast compilation and execution.",
+                "Static typing with garbage collection.",
+                "Strong standard library for building robust applications.",
+              ],
             },
           },
           {
@@ -465,6 +661,12 @@ export const categoryData = {
             overview: {
               description:
                 "Python is a high-level, interpreted programming language known for its readability, simplicity, and wide range of applications.",
+              features: [
+                "Easy-to-read syntax for faster development.",
+                "Comprehensive libraries for machine learning, data analysis, and web development.",
+                "Wide range of frameworks like Django and Flask.",
+                "Cross-platform compatibility.",
+              ],
             },
           },
         ],
@@ -478,6 +680,12 @@ export const categoryData = {
             overview: {
               description:
                 "Laravel is a PHP web application framework with expressive, elegant syntax. We've already laid the foundation — freeing you to create without sweating the small things.",
+              features: [
+                "Blade templating engine for dynamic views.",
+                "Built-in tools for authentication and authorization.",
+                "Database migrations and eloquent ORM support.",
+                "Comprehensive ecosystem for rapid development.",
+              ],
             },
           },
           {
@@ -489,6 +697,12 @@ export const categoryData = {
             overview: {
               description:
                 "A web-app framework that includes everything needed to create database-backed web applications according to the Model-View-Controller (MVC) pattern.",
+              features: [
+                "Convention over configuration for faster development.",
+                "Built-in tools for RESTful API creation.",
+                "Scalable and supports a wide range of databases.",
+                "Extensive plugin and gem ecosystem.",
+              ],
             },
           },
           {
@@ -500,6 +714,12 @@ export const categoryData = {
             overview: {
               description:
                 "The web framework for perfectionists with deadlines.",
+              features: [
+                "Built-in ORM for database handling.",
+                "Automatic admin panel generation.",
+                "Robust security features like CSRF protection.",
+                "Highly scalable for enterprise-grade applications.",
+              ],
             },
           },
           {
@@ -511,6 +731,12 @@ export const categoryData = {
             overview: {
               description:
                 "Flask is a lightweight and flexible web application framework for Python, known for its simplicity and ease of use.",
+              features: [
+                "Minimalistic design with full control over components.",
+                "Integrated support for RESTful request handling.",
+                "Extensible with third-party libraries.",
+                "Built-in development server for testing.",
+              ],
             },
           },
           {
@@ -522,21 +748,16 @@ export const categoryData = {
             overview: {
               description:
                 "NestJS is a framework for building efficient, scalable Node.js web applications. It uses modern JavaScript, is built with TypeScript and combines elements of OOP (Object Oriented Programming), FP (Functional Programming), and FRP (Functional Reactive Programming).",
+              features: [
+                "Built-in support for TypeScript.",
+                "Modular architecture for easy scaling.",
+                "Integration with modern libraries like TypeORM and Mongoose.",
+                "Powerful dependency injection system.",
+              ],
             },
           },
         ],
         Platforms: [
-          {
-            name: "Supabase",
-            slug: "supabase",
-            url: "https://supabase.com/",
-            icon: SupabaseIcon,
-            tags: ["PostgreSQL", "Platform"],
-            overview: {
-              description:
-                "Build production-grade applications with a Postgres database, Authentication, instant APIs, Realtime, Functions, Storage and Vector embeddings. Start for free.",
-            },
-          },
           {
             name: "Firebase",
             slug: "firebase",
@@ -546,6 +767,12 @@ export const categoryData = {
             overview: {
               description:
                 "Discover Firebase, Google’s mobile and web app development platform that helps developers build apps and games that users will love.",
+              features: [
+                "Real-time database for syncing data.",
+                "Authentication services with multiple providers.",
+                "Cloud Firestore for scalable and flexible NoSQL databases.",
+                "Hosting for fast and secure deployments.",
+              ],
             },
           },
           {
@@ -557,6 +784,12 @@ export const categoryData = {
             overview: {
               description:
                 "The backend application platform with everything you need to build your product.",
+              features: [
+                "Serverless backend with automatic scaling.",
+                "Real-time state management and synchronization.",
+                "Built-in support for complex queries.",
+                "Zero server management required.",
+              ],
             },
           },
         ],
@@ -577,6 +810,12 @@ export const categoryData = {
             overview: {
               description:
                 "Next.js by Vercel is the full-stack React framework for the web.",
+              features: [
+                "Server-side rendering (SSR) for dynamic content.",
+                "Static site generation (SSG) for pre-rendered pages.",
+                "API routes to build serverless APIs.",
+                "Optimized image handling and built-in CSS support.",
+              ],
             },
           },
           {
@@ -588,6 +827,12 @@ export const categoryData = {
             overview: {
               description:
                 "An approachable, performant and versatile framework for building web user interfaces.",
+              features: [
+                "Ships zero JavaScript by default for faster loading.",
+                "Supports multiple frameworks like React, Vue, and Svelte.",
+                "Partial hydration for interactive components.",
+                "Built-in support for Markdown and MDX.",
+              ],
             },
           },
           {
@@ -599,6 +844,12 @@ export const categoryData = {
             overview: {
               description:
                 "SvelteKit is the official Svelte application framework.",
+              features: [
+                "Automatic code splitting and optimized builds.",
+                "Simplified server-side rendering (SSR).",
+                "Routing system with dynamic and static routes.",
+                "Seamless integration with Svelte components.",
+              ],
             },
           },
           {
@@ -610,6 +861,12 @@ export const categoryData = {
             overview: {
               description:
                 "Nuxt is an open source framework that makes web development intuitive and powerful. Create performant and production-grade full-stack web apps and websites with confidence.",
+              features: [
+                "Server-side rendering for dynamic content.",
+                "Static site generation for pre-rendered pages.",
+                "Modular architecture with built-in plugins.",
+                "Integrated routing and state management with Vuex.",
+              ],
             },
           },
           {
@@ -621,6 +878,12 @@ export const categoryData = {
             overview: {
               description:
                 "Remix is a full stack web framework that lets you focus on the user interface and work back through web standards to deliver a fast, slick, and resilient user experience. People are gonna love using your stuff.",
+              features: [
+                "Optimized for server-side rendering.",
+                "Load data seamlessly with loader functions.",
+                "Nested routing for better organization.",
+                "Full-stack support with backend integrations.",
+              ],
             },
           },
         ],
@@ -641,6 +904,12 @@ export const categoryData = {
             overview: {
               description:
                 "Drizzle ORM is a lightweight and performant TypeScript ORM with developer experience in mind.",
+              features: [
+                "Type-safe SQL query building.",
+                "Supports PostgreSQL, MySQL, and SQLite.",
+                "Lightweight and performant design.",
+                "Seamless integration with modern frameworks.",
+              ],
             },
           },
           {
@@ -652,6 +921,12 @@ export const categoryData = {
             overview: {
               description:
                 "Prisma is a next-generation Node.js and TypeScript ORM for PostgreSQL, MySQL, SQL Server, SQLite, MongoDB, and CockroachDB. It provides type-safety, automated migrations, and an intuitive data model.",
+              features: [
+                "Automatic migrations with Prisma Migrate.",
+                "Type-safe queries with Prisma Client.",
+                "Support for multiple databases including PostgreSQL and MongoDB.",
+                "GraphQL and REST API integration.",
+              ],
             },
           },
         ],
@@ -664,6 +939,12 @@ export const categoryData = {
             overview: {
               description:
                 "Postgres made for developers. Easy to Use, Scalable, Cost efficient solution for your next project.",
+              features: [
+                "Built-in support for serverless applications.",
+                "Fast and scalable cloud infrastructure.",
+                "Point-in-time recovery and branching.",
+                "Supports real-time analytics and querying.",
+              ],
             },
             tags: ["Platform"],
           },
@@ -674,6 +955,12 @@ export const categoryData = {
             icon: MongoDBIcon,
             overview: {
               description: "All the tech stacks you should know",
+              features: [
+                "Document-oriented data storage.",
+                "Scalable architecture for large datasets.",
+                "Rich query language with aggregation.",
+                "Built-in support for replication and sharding.",
+              ],
             },
             tags: ["Database"],
           },
@@ -686,6 +973,12 @@ export const categoryData = {
             overview: {
               description:
                 "Build production-grade applications with a Postgres database, Authentication, instant APIs, Realtime, Functions, Storage and Vector embeddings. Start for free.",
+              features: [
+                "Managed PostgreSQL database with real-time updates.",
+                "Authentication and authorization built-in.",
+                "API auto-generated from your database schema.",
+                "Storage for managing files and media.",
+              ],
             },
           },
           {
@@ -697,6 +990,12 @@ export const categoryData = {
             overview: {
               description:
                 "Appwrite is an open-source platform for building applications at any scale, using your preferred programming languages and tools.",
+              features: [
+                "Self-hosted backend for flexibility and control.",
+                "Authentication and user management out-of-the-box.",
+                "Real-time database with support for queries.",
+                "File storage with built-in security controls.",
+              ],
             },
           },
         ],
@@ -715,6 +1014,12 @@ export const categoryData = {
           tags: ["State"],
           overview: {
             description: "A predictable state container for JavaScript apps.",
+            features: [
+              "Centralized state management for consistency.",
+              "Debugging tools like Redux DevTools.",
+              "Middleware support for handling side effects.",
+              "Compatible with any JavaScript framework or library.",
+            ],
           },
         },
         {
@@ -725,6 +1030,12 @@ export const categoryData = {
           tags: ["State"],
           overview: {
             description: "A state management library for React.",
+            features: [
+              "Fine-grained updates for performance optimization.",
+              "Declarative data dependencies for derived state.",
+              "Seamless integration with React components.",
+              "Support for asynchronous state management.",
+            ],
           },
         },
         {
@@ -736,6 +1047,12 @@ export const categoryData = {
           overview: {
             description:
               "A small, fast and scalable bearbones state-management solution using simplified flux principles. ",
+            features: [
+              "Minimal API for simplicity.",
+              "Global state with zero boilerplate.",
+              "Supports asynchronous actions and middlewares.",
+              "Great performance with small bundle size.",
+            ],
           },
         },
       ],
@@ -754,6 +1071,12 @@ export const categoryData = {
           overview: {
             description:
               "Streamline media management and improve user experience by automatically delivering images and videos, enhanced and optimized for every user.",
+            features: [
+              "Automatic image and video optimization.",
+              "Advanced media transformation capabilities.",
+              "CDN for fast content delivery.",
+              "Seamless integration with web and mobile apps.",
+            ],
           },
         },
         {
@@ -764,6 +1087,12 @@ export const categoryData = {
           tags: ["Storage"],
           overview: {
             description: "An easier way to upload files.",
+            features: [
+              "Simple API for file uploads.",
+              "Supports large file sizes with resumable uploads.",
+              "Customizable upload parameters.",
+              "Compatible with multiple frameworks and environments.",
+            ],
           },
         },
       ],
@@ -782,6 +1111,12 @@ export const categoryData = {
           overview: {
             description:
               "Stripe powers online and in-person payment processing and financial solutions for businesses of all sizes. Accept payments, send payouts, and automate financial processes with a suite of APIs and no-code tools.",
+            features: [
+              "Support for multiple payment methods and currencies.",
+              "Subscription management and recurring billing.",
+              "Robust API for custom payment workflows.",
+              "Built-in fraud prevention tools.",
+            ],
           },
         },
         // {
@@ -807,6 +1142,12 @@ export const categoryData = {
             overview: {
               description:
                 "Vercel's Frontend Cloud gives developers the frameworks, workflows, and infrastructure to build a faster, more personalized Web.",
+              features: [
+                "Automatic builds and deployments with Git integration.",
+                "Global CDN for fast performance.",
+                "Edge functions for dynamic content rendering.",
+                "Easy integration with Next.js and other frameworks.",
+              ],
             },
           },
           {
@@ -818,6 +1159,12 @@ export const categoryData = {
             overview: {
               description:
                 "Heroku is a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud.",
+              features: [
+                "Managed environment for deploying apps.",
+                "Add-ons marketplace for extended functionalities.",
+                "Scalable resources for growing applications.",
+                "Multi-language support for flexibility.",
+              ],
             },
           },
           {
@@ -829,6 +1176,12 @@ export const categoryData = {
             overview: {
               description:
                 "Realize the speed, agility and performance of a scalable, composable web architecture with Netlify. Explore the composable web platform now!",
+              features: [
+                "Continuous deployment with Git integration.",
+                "Serverless functions for dynamic content.",
+                "Custom domains and SSL support.",
+                "Global CDN for optimized delivery.",
+              ],
             },
           },
           {
@@ -840,6 +1193,12 @@ export const categoryData = {
             overview: {
               description:
                 "Railway is an infrastructure platform where you can provision infrastructure, develop with that infrastructure locally, and then deploy to the cloud.",
+              features: [
+                "One-click deployment for apps and services.",
+                "Integrated database hosting.",
+                "Auto-scaling for growing applications.",
+                "Detailed resource usage monitoring.",
+              ],
             },
           },
           {
@@ -851,6 +1210,12 @@ export const categoryData = {
             overview: {
               description:
                 "Render is a unified cloud to build and run all your apps and websites with free TLS certificates, global CDN, private networks and auto deploys from Git.",
+              features: [
+                "Automatic HTTPS for secure connections.",
+                "Support for static sites, web services, and background workers.",
+                "Free SSL and custom domains.",
+                "Global CDN for faster content delivery.",
+              ],
             },
           },
         ],
@@ -870,6 +1235,12 @@ export const categoryData = {
           overview: {
             description:
               "Cross-browser end-to-end testing for modern web apps.",
+            features: [
+              "Cross-browser automation for Chromium, Firefox, and WebKit.",
+              "Powerful API for taking screenshots and generating PDFs.",
+              "Supports headless and full browser mode.",
+              "Built-in test runner with parallel execution.",
+            ],
           },
         },
         {
@@ -880,6 +1251,12 @@ export const categoryData = {
           tags: ["Testing"],
           overview: {
             description: "Delightful JavaScript Testing",
+            features: [
+              "Zero configuration setup for most JavaScript projects.",
+              "Snapshot testing for UI consistency.",
+              "Built-in code coverage reporting.",
+              "Supports mocking and testing asynchronous code.",
+            ],
           },
         },
       ],
